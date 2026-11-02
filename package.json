@@ -1,0 +1,57 @@
+{
+  "name": "pi-tokrate-speed",
+  "version": "0.3.0",
+  "type": "module",
+  "description": "pi-token-speed-style TPS status line for Pi, backed by pi-tokrate's self-calibrating token meter",
+  "main": "index.ts",
+  "license": "MIT",
+  "author": "Eric Qian",
+  "contributors": [
+    {
+      "name": "Ttungx",
+      "url": "https://github.com/Ttungx"
+    }
+  ],
+  "homepage": "https://github.com/Ttungx/pi-tokrate-speed#readme",
+  "bugs": "https://github.com/Ttungx/pi-tokrate-speed/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ttungx/pi-tokrate-speed.git"
+  },
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "pi-tokrate",
+    "tokens",
+    "throughput",
+    "tps",
+    "reasoning",
+    "statusline"
+  ],
+  "files": [
+    "index.ts",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "scripts": {
+    "test": "node --test test/meter.test.mjs test/status.test.mjs test/store.test.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^1.4.0",
+    "@types/node": "^26.1.1",
+    "typescript": "^7.0.2"
+  }
+}
